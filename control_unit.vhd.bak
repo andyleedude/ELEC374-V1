@@ -1,0 +1,11 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work components_all.all;
+
+entity control_unit is port (
+	clk: in std_logic;
+	reset: in std_logic;
+	stop: in std_logic;
+	IR: in std_logic_vector (31 downto 0);
+	con_ff: in std_logic; 
+	

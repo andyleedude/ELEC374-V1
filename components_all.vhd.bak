@@ -1,0 +1,49 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+package components_all is 
+
+
+component encoder32to5 is port(
+		input : in std_logic_vector(31 downto 0);
+		output: out std_logic_vector(4 downto 0);
+);
+end component encoder32to5;
+
+component mux32to1 is port(
+BusMuxinR0: in std_logic_vector (31 downto 0);
+BusMuxinR1: in std_logic_vector (31 downto 0);
+BusMuxinR2: in std_logic_vector (31 downto 0);
+BusMuxinR3: in std_logic_vector (31 downto 0);
+BusMuxinR4: in std_logic_vector (31 downto 0);
+BusMuxinR5: in std_logic_vector (31 downto 0);
+BusMuxinR6: in std_logic_vector (31 downto 0);
+BusMuxinR7: in std_logic_vector (31 downto 0);
+BusMuxinR8: in std_logic_vector (31 downto 0);
+BusMuxinR9: in std_logic_vector (31 downto 0);
+BusMuxinR10: in std_logic_vector (31 downto 0);
+BusMuxinR11: in std_logic_vector (31 downto 0);
+BusMuxinR12: in std_logic_vector (31 downto 0);
+BusMuxinR13: in std_logic_vector (31 downto 0);
+BusMuxinR14: in std_logic_vector (31 downto 0);
+BusMuxinR15: in std_logic_vector (31 downto 0);
+BusMuxinHI: in std_logic_vector (31 downto 0);
+BusMuxinLO: in std_logic_vector (31 downto 0);
+BusMuxinZhigh: in std_logic_vector (31 downto 0);
+BusMuxinZlow: in std_logic_vector (31 downto 0);
+BusMuxinPC: in std_logic_vector (31 downto 0);
+BusMuxinMDR: in std_logic_vector (31 downto 0);
+BusMuxinInport: in std_logic_vector (31 downto 0);
+C_sign_extended: in std_logic_vector (31 downto 0);
+BusMuxin24: in std_logic_vector(31 downto 0);
+BusMuxin25: in std_logic_vector(31 downto 0);
+BusMuxin26: in std_logic_vector(31 downto 0);
+BusMuxin27: in std_logic_vector(31 downto 0);
+BusMuxin28: in std_logic_vector(31 downto 0);
+BusMuxin29: in std_logic_vector(31 downto 0);
+BusMuxin30: in std_logic_vector(31 downto 0);
+BusMuxin31: in std_logic_vector(31 downto 0);
+Sin : in std_logic_vector (4 downto 0);
+BusMuxOut: out std_logic_vector (31 downto 0)
+);
+end component mux32to1;
