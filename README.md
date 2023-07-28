@@ -1,2 +1,2 @@
 # ELEC374
-CPU design
+32-bit risc style CPU design
